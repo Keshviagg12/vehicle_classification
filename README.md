@@ -24,7 +24,7 @@ rather than oversampling, keeping the original data distribution intact.
 ---
 ## Dashboard Preview
 
-![Dashboard Preview](assets/dashboard_preview.png)
+![Dashboard Preview](dashboard_preview.png)
 
 ---
 
