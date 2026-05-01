@@ -22,6 +22,11 @@ imbalance (1 : 6 : 0.7) is handled via inverse-frequency class weighting
 rather than oversampling, keeping the original data distribution intact.
 
 ---
+## Dashboard Preview
+
+![Dashboard Preview](assets/dashboard_preview.png)
+
+---
 
 ## Models
 
@@ -59,31 +64,33 @@ Input (44,)
 
 ## Project Structure
 
-```
 vehicle_classification/
 │
-├── config.py                    # All hyperparameters in one place
-├── train.py                     # Training entry point
-├── predict.py                   # Inference on new samples
+├── config.py
+├── train.py
+├── predict.py
 ├── requirements.txt
 │
+├── assets/                        ← ADD THIS FOLDER
+│   └── dashboard_preview.png      ← PUT IMAGE HERE
+│
 ├── data/
-│   ├── class3.csv               # Raw 3-axis magnetic sensor data
-│   └── class3_FE.csv            # 44-feature engineered dataset
+│   ├── class3.csv
+│   └── class3_FE.csv
 │
 ├── models/
-│   ├── cnn_lstm.py              # CNN-BiLSTM architecture
-│   └── mlp_fe.py                # MLP for FE data
+│   ├── cnn_lstm.py
+│   └── mlp_fe.py
 │
 ├── utils/
-│   ├── data_loader.py           # Parsing, normalisation, train/val/test splits
-│   ├── metrics.py               # Evaluation, confusion matrix, F1 plots
-│   └── seed.py                  # Global reproducibility seed setter
+│   ├── data_loader.py
+│   ├── metrics.py
+│   └── seed.py
 │
 ├── notebooks/
-│   └── exploratory_analysis.py  # EDA: waveforms, PCA, t-SNE, box-plots
+│   └── exploratory_analysis.py
 │
-└── results/                     # Auto-created — training curves, CM plots
+└── results/
 ```
 
 ---
