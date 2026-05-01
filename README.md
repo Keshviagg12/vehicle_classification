@@ -70,9 +70,7 @@ vehicle_classification/
 ├── train.py
 ├── predict.py
 ├── requirements.txt
-│
-├── assets/                        ← ADD THIS FOLDER
-│   └── dashboard_preview.png      ← PUT IMAGE HERE
+├── dashboard_preview.png         
 │
 ├── data/
 │   ├── class3.csv
